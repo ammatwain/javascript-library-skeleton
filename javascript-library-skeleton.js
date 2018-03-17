@@ -8,12 +8,12 @@
 		let rootValue = root_value;
 		let javascript_library_skeleton_object = {};
 
-		// This variable will be inaccessible to the user, only can be visible in the scope of your library.
+		// This variable will be inaccessible to the user,
+		// only can be visible in the scope of your library.
 		let options = {
 			option_a:null,
 			option_b:null,
 		};
-		
 
 		// Set a private property
 		javascript_library_skeleton_object.setOptionA = function(value){
@@ -45,11 +45,12 @@
 		return javascript_library_skeleton_object;
 	}
 
-	// We need that our library is globally accesible, then we save in the window
+	// We need that our library is globally accesible,
+	// then we save in the window
 	if(typeof(window.JavascriptLibrarySkeleton) === 'undefined'){
-		window.Wawa= javascript_library_skeleton;
+		window.Wawa = javascript_library_skeleton;
 	}
 	if(typeof(window.jls) === 'undefined'){
-		window.jls= javascript_library_skeleton;
+		window.jls = javascript_library_skeleton;
 	}
 })(window); // We send the window variable withing our function

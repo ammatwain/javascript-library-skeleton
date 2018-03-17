@@ -39,7 +39,7 @@
 
 		// Get a protected copy of the private properties 
 		javascript_library_skeleton_object.getOptions = function(){
-			return Object.clone(settings);
+			return Object.clone(options);
 		};
 
 		return javascript_library_skeleton_object;

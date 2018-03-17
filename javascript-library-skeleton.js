@@ -46,10 +46,13 @@
 
 	// We need that our library is globally accesible,
 	// then we save in the window
-	if(typeof(window.JavascriptLibrarySkeleton) === 'undefined'){
-		window.Wawa = javascript_library_skeleton;
+	if(typeof(window.javascript_library_skeleton) === 'undefined'){
+		window.javascript_library_skeleton = javascript_library_skeleton;
 	}
+	/*
+	 * optional short name for javascript_library_skeleton
 	if(typeof(window.jls) === 'undefined'){
 		window.jls = javascript_library_skeleton;
 	}
+	*/
 })(window); // We send the window variable withing our function

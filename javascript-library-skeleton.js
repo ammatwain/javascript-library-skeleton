@@ -15,27 +15,29 @@
 		};
 		
 
-		// Change a private property
+		// Set a private property
 		javascript_library_skeleton_object.setOptionA = function(value){
 			options.option_a = value;
 			return value;
 		};
-		
-		// Change a private property
+
+		// Set a private property
 		javascript_library_skeleton_object.setOptionB = function(value){
 			options.option_b = value;
 			return settings.mute;
 		};
-		
-		// Change a private property
+
+		// Get a private property
 		javascript_library_skeleton_object.getOptionA = function(){
 			return options.option_a;
 		};
-		
+
+		// Get a private property
 		javascript_library_skeleton_object.getOptionB = function(){
 			return options.option_b;
 		};
 
+		// Get a protected copy of the private properties 
 		javascript_library_skeleton_object.getOptions = function(){
 			return Object.clone(settings);
 		};

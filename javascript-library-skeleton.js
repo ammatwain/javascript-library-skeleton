@@ -3,7 +3,7 @@
 	'use strict';
 
 	// This function will contain all our code
-	var javascript_library_skeleton = function (root_value=null){
+	let javascript_library_skeleton = function (root_value=null){
 		let rootValue = root_value;
 		let SELF = {}; // SELF = Internal javascript_library_skeleton Object
 

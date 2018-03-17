@@ -4,9 +4,8 @@
 
 	// This function will contain all our code
 	var javascript_library_skeleton = function (root_value=null){
-
 		let rootValue = root_value;
-		let javascript_library_skeleton_object = {};
+		let SELF = {}; // SELF = Internal javascript_library_skeleton Object
 
 		// This variable will be inaccessible to the user,
 		// only can be visible in the scope of your library.
@@ -16,33 +15,33 @@
 		};
 
 		// Set a private property
-		javascript_library_skeleton_object.setOptionA = function(value){
-			options.option_a = value;
-			return value;
+		SELF.setOptionA = function(value){
+			options.option_a = 'Option A is ' + rootValue + ' ' + value;
+			return SELF;
 		};
 
 		// Set a private property
-		javascript_library_skeleton_object.setOptionB = function(value){
-			options.option_b = value;
-			return settings.mute;
+		SELF.setOptionB = function(value){
+			options.option_b = 'Option B is ' + rootValue + ' ' + value;
+			return SELF;
 		};
 
 		// Get a private property
-		javascript_library_skeleton_object.getOptionA = function(){
+		SELF.getOptionA = function(){
 			return options.option_a;
 		};
 
 		// Get a private property
-		javascript_library_skeleton_object.getOptionB = function(){
+		SELF.getOptionB = function(){
 			return options.option_b;
 		};
 
 		// Get a protected copy of the private properties 
-		javascript_library_skeleton_object.getOptions = function(){
-			return Object.clone(options);
+		SELF.getOptions = function(){
+			return Object.assign(options);
 		};
 
-		return javascript_library_skeleton_object;
+		return SELF;
 	}
 
 	// We need that our library is globally accesible,
